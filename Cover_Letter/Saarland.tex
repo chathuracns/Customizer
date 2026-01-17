@@ -1,0 +1,138 @@
+%-------------------------
+% Cover Letter in Latex
+% Author : Audric Serador
+% Inspired by: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+% --- STANDARD PACKAGES FROM PREVIOUS SETUP ---
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{mwe}
+\usepackage{wrapfig}
+\input{glyphtounicode}
+\usepackage[default]{lato} % Custom font
+
+% --- STYLING SETUP ---
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+
+% --- MODIFIED ALIGNMENT: REMOVING RAGGEDRIGHT TO ALLOW JUSTIFICATION ---
+% \raggedbottom % Keep this for vertical spacing
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+\pdfgentounicode=1
+
+%-------------------------%
+
+\begin{document}
+
+%----------HEADING (Simplified for Vertical Alignment)----------%
+\noindent
+\textbf{\Huge \scshape Chathura Nirmal Weerasinghe} \\[0.5em]
+\noindent % Ensures the contact line also starts at the far left
+\textbf {\href{https://www.chathuranirmal.com}{{www.chathuranirmal.com}}} \quad \small\ +94-770636509  \quad \small
+\href{mailto:chathuranirmalweerasinghe@gmail.com}{{chathuranirmalweerasinghe@gmail.com}} \quad
+
+\end{tabularx}
+
+% --- ADDING HORIZONTAL LINE AFTER HEADER ---
+\vspace{0.1cm}
+\noindent\rule{\textwidth}{1pt}
+\vspace{0.8cm} % Space after the line
+
+
+
+% --- SUBJECT LINE ---
+\begin{center}
+    \textbf{Personal Statement}
+\end{center}
+\vspace{0.5cm}
+
+% --- SALUTATION (Ensuring flush-left alignment with \noindent) ---
+\noindent \textbf{1) Why this internship program appeals to me
+}
+\vspace{0.2cm}
+
+% --- BODY OF THE LETTER WITH JUSTIFICATION and distinct paragraph breaks ---
+\noindent % Ensuring the first paragraph starts flush-left
+\begin{justify}
+
+The research done by Prof. Jürgen Steimle in haptic interfaces and wearable computing has strongly inspired me and influenced the direction of my own interests. I especially enjoyed reading projects like On-Skin Computing, Multi-Touch Skin, and Tacttoo. These works made me excited about how interactive systems can be integrated with the human body in creative, lightweight, and practical ways. I was also particularly inspired to see that Tacttoo was co-authored by Dr. Anusha Withana, an alumnus of my department, which made the work feel even more motivating to me. Overall, I feel your lab’s creative approach to exploring new interaction techniques closely matches the kind of research environment I want to learn from and contribute to.
+
+
+\vspace{0.6cm} % Explicit vertical space for formal paragraph break
+
+\noindent \textbf{2) Future goals and how this program supports them}
+\vspace{0.2cm}
+
+
+After completing my degree, I hope to pursue a PhD in Human Computer Interaction, focusing on the area where electronics, the human body, and interaction design meet. My long term plan is to continue in HCI research. I believe this internship would help me move closer to that goal by giving me experience working in areas like body based interfaces, haptics, and wearable devices. I also think the way your lab works through brainstorming, creative exploration, and design thinking would help me improve how I develop research ideas and approach problems, which would be really valuable for my future.
+
+\vspace{0.6cm} % Explicit vertical space for formal paragraph break
+
+\noindent \textbf{3) Prior experience with HCI research or related areas}
+\vspace{0.2cm}
+
+
+I have research experience from working at the  {\href{https://exertiongameslab.org/}{{Exertion Games Lab}}} at Monash University under   {\href{https://www.florianfloydmueller.com/}{{Prof. Florian “Floyd” Müller}}} and {\href{https://research.monash.edu/en/persons/don-samitha-elvitigala}{{Dr. Don Samitha Elvitigala}}}. During that time, I contributed to projects that led to publications, including {\href{https://doi.org/10.1145/3749385.3749418}{{VibroBits, a vibrotactile feedback system for sports training}}}. This work was demonstrated at SportsHCI ’25 (Proceedings of the First Annual Conference on Human-Computer Interaction and Sports), and it helped me learn how haptic Interfaces can be developed and tested in real use cases.
+
+\vspace{0.3cm} % Explicit vertical space for formal paragraph break
+
+Along with my main research work, I also supported several PhD led projects. For example, I worked on a system using the Eduexo exoskeleton for {\href{https://www.nathalieoverdevest.com/understanding-embodied-remembering/}{{Nathalie Overdevest’s Embodied Remembering project}}}. I also developed an AR-based navigation system using HoloLens 2 for Linjia He’s research on cyclist attention in AR. Through these projects, I gained hands on experience in prototyping with microcontrollers, sensors, actuators, and 3D printing, and I also learned how to plan and run user studies.
+
+
+\vspace{0.6cm} % Explicit vertical space for formal paragraph break
+
+\noindent  \textbf{4) Project preferences
+}
+\vspace{0.2cm}
+
+
+I’m most interested in projects that explore the connection between the human body, electronics, and interaction. In particular, I’m excited about ideas like improving human perception using proprioceptive motion feedback, haptic human–agent interaction, and programmable delay in passive actuation. I’m also open to exploring other related topics in wearable and haptic interaction, especially if they involve building prototypes and evaluating them with users.
+
+
+\end{justify}
+\vspace{0.5cm}
+
+% --- CLOSING AND SIGNATURE ---
+\begin{flushleft}
+   
+    %\vspace{1.0cm} % Space for a physical signature
+    \textbf{Chathura Nirmal Weerasinghe}\\
+    Final year undergraduate,\\
+    Department of Electronic and Telecommunication Engineering,\\
+    University of Moratuwa,\\
+    Sri Lanka.\\
+    January 13, 2026
+    
+\end{flushleft}
+
+\end{document}

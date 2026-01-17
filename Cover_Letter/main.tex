@@ -1,0 +1,127 @@
+%-------------------------
+% Cover Letter in Latex
+% Author : Audric Serador
+% Inspired by: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+% --- STANDARD PACKAGES FROM PREVIOUS SETUP ---
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{mwe}
+\usepackage{wrapfig}
+\input{glyphtounicode}
+\usepackage[default]{lato} % Custom font
+
+% --- STYLING SETUP ---
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+
+% --- MODIFIED ALIGNMENT: REMOVING RAGGEDRIGHT TO ALLOW JUSTIFICATION ---
+% \raggedbottom % Keep this for vertical spacing
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+\pdfgentounicode=1
+
+%-------------------------%
+
+\begin{document}
+
+%----------HEADING (Simplified for Vertical Alignment)----------%
+\noindent
+\textbf{\Huge \scshape Chathura Nirmal Weerasinghe} \\[0.5em]
+\noindent % Ensures the contact line also starts at the far left
+\textbf {\href{https://www.chathuranirmal.com}{{www.chathuranirmal.com}}} \quad \small\ +94-770636509  \quad \small
+\href{mailto:chathuranirmalweerasinghe@gmail.com}{{chathuranirmalweerasinghe@gmail.com}} \quad
+
+\end{tabularx}
+
+% --- ADDING HORIZONTAL LINE AFTER HEADER ---
+\vspace{0.1cm}
+\noindent\rule{\textwidth}{1pt}
+\vspace{0.8cm} % Space after the line
+
+% --- RECEIVER (Already flush-left) ---
+\noindent\textbf{Florian ‘Floyd’ Mueller},\\
+Professor of Future Interfaces, \\
+Monash University. \\
+\vspace{0.8cm}
+
+% --- SUBJECT LINE ---
+\begin{center}
+    \textbf{Ph.D. Application – on Human Computer Integration}
+\end{center}
+\vspace{0.5cm}
+
+% --- SALUTATION (Ensuring flush-left alignment with \noindent) ---
+\noindent Dear Floyd,
+\vspace{0.2cm}
+
+% --- BODY OF THE LETTER WITH JUSTIFICATION and distinct paragraph breaks ---
+\noindent % Ensuring the first paragraph starts flush-left
+\begin{justify}
+
+I am writing to express my interest in pursuing a PhD under your supervision and within the Exertion Games Lab. I have developed a deep passion for research through design for the field that integrates human \textbf{biology}, \textbf{electronics}, and \textbf{psychology}, aligning directly with the research conducted by your team on body, technology and play. Specifically on \textbf{Human–Computer Integration (HInt)}.
+
+\vspace{0.3cm} % Explicit vertical space for formal paragraph break
+
+I am currently completing a four-year bachelor's degree in biomedical engineering with a dedicated research component. My current academic standing places me in the \textbf{First Class Honours (H1)}   (3.7/4.0) category. I have completed all my academic studies, from secondary school through university, in the English medium, ensuring I meet the English language proficiency requirements.
+
+\vspace{0.3cm} % Explicit vertical space for formal paragraph break
+
+I believe my academic background provides me with the skillset essential for a Ph.D. in HInt. My \textbf{electronics engineering major} provides a strong foundation in hardware prototyping, electronic circuit design, software development, and 3D printing. My \textbf{biomedical specialization} offers expertise in biosignal processing, biosensors, wearable device design, and human physiology.
+
+\vspace{0.3cm} % Explicit vertical space for formal paragraph break
+
+My practical experience includes the following projects, Developing a Brain–Computer Interface Game for a Locked-In Pediatric Patient, a device for ECG Signal Extraction and Monitoring Using Analog Electronics, and a Dynamic Body-Weight Support System Using a Motorized Unloader for Rehabilitation.
+
+\vspace{0.3cm} % Explicit vertical space for formal paragraph break
+
+I am particularly drawn to the Exertion Games Lab due to my experience as a former member and my strong admiration for the unique multidisciplinary lab culture and research environment. The Lab’s focus on the deep interconnection between technology and the human experience perfectly aligns with my personal research goals. I firmly believe that my skills and passion are ideally suited to contribute meaningfully to your future research trajectory.
+
+\vspace{0.3cm} % Explicit vertical space for formal paragraph break
+
+Thank you for considering my application. I am confident that my academic background and commitment to research in human-computer integration make me an excellent candidate for this PhD opportunity. I look forward to the opportunity to discuss my application further.
+
+\end{justify}
+\vspace{0.5cm}
+
+% --- CLOSING AND SIGNATURE ---
+\begin{flushleft}
+    Sincerely, \\
+    %\vspace{1.0cm} % Space for a physical signature
+    \textbf{Chathura Nirmal Weerasinghe}\\
+    Final year undergraduate,\\
+    University of Moratuwa.\\
+    December 10, 2025
+    
+\end{flushleft}
+
+\end{document}
