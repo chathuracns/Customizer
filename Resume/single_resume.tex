@@ -85,7 +85,7 @@
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
+    \vspace{10pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
         \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
@@ -161,7 +161,7 @@
     \resumeItemListEnd
 
     \resumeSubheading
-        {Product Development Experience @ "MeasureUP" \href{https://github.com/chathuracns}{\faExternalLink*}}{Aug 2023 -- Present}
+        {Product Development Experience @ "MeasureUP" \href{https://chathuranirmal.com/MeasureUP/}{\faExternalLink*}}{Aug 2023 -- Present}
         {World Bank funded AHEAD Project to Develop a Portable BMI Measuring Device for Clinical Settings.}{}
     
     \resumeItemListStart
@@ -171,7 +171,7 @@
         \resumeItem{Maintained legal, financial, and design documentation. Exhibited excellent communication skills in pitching sessions, securing grant approval.}
     \resumeItemListEnd
     
-    \href{https://github.com/chathuracns}{\underline{For more details}} \quad
+
 
 \resumeSubHeadingListEnd
 
@@ -233,7 +233,7 @@
         \quad
     \resumeItemListEnd
 
-    \begin{comment}
+\begin{comment}
     \resumeProjectHeading
         {\textbf{EcoWatt Field Gateway for Inverter Monitoring \href{https://docs.google.com/document/d/18SiAOJTwsafdJqaXoMqMdF3TOuyXTFAseOsylDLD3i8/edit}{\faExternalLink*}} $|$ \emph{ESP8266/NodeMCU,Modbus Protocol, FOTA}}{} 
     \resumeItemListStart
@@ -241,26 +241,24 @@
         \resumeItem{Integrate FOTA (Firmware Over-The-Air) functionality, supporting secure, chunked downloads, SHA-256 integrity verification, and rollback safety for firmware updates.}
         \resumeItem{Implement a lightweight security layer (HMAC-SHA256 for integrity and anti-replay protection) and power optimization techniques (DVFS/sleep) suitable for MCU constraints.}
     \resumeItemListEnd 
-    \end{comment}
+\end{comment}
 
-    \begin{comment}
+\begin{comment}
     \resumeProjectHeading
         {\textbf{Implementing a Complete Embedded System for a Medibox} $|$ \emph{Node-RED, MQTT protocol, NTP, ESP32}}{}
     \resumeItemListStart
         \resumeItem{ESP32 micro-controller programming, Designing Node-RED dashboard for remote monitoring}
         \resumeItem{MQTT protocol for IoT communication}
     \resumeItemListEnd
-    \end{comment}
+\end{comment}
 
-    \begin{comment}
     \resumeProjectHeading
-        {\textbf{Smart Fitness Band with Custom Tension Sensing and Gamified Endurance Tracking} $|$ \emph{ESP32, Analog Front-End (AFE), Embedded Systems, Real-Time Signal Processing}}{}
+        {\textbf{Smart Fitness Band with Custom Tension Sensing and Gamified Endurance Tracking} $|$ \emph{ESP32, React, Real-Time communication}}{}
     \resumeItemListStart
         \resumeItem{Developed a custom analog front-end circuit to measure fitness band tension accurately using microcontroller ADC input}
         \resumeItem{Implemented an ESP32-based system to track tension magnitude and time-under-tension in real time}
         \resumeItem{Built a gamified software experience where tension + endurance time act as gameplay variables for interactive training feedback}
     \resumeItemListEnd
-    \end{comment}
 
 \resumeSubHeadingListEnd
 
@@ -290,13 +288,10 @@
 \section{Technical Skills}
 \begin{multicols}{2}
     \textbf{Languages:} English (fluent), Sinhala (native) \linebreak
-    \textbf{Programming:} Python, C, C++, Matlab, HTML \linebreak
+    \textbf{Programming:} Python, C, C++, Matlab, HTML 
     
-    \begin{comment}
     \textbf{Frameworks:} Tensorflow, Keras, PyTorch
-    \linebreak
-    \end{comment}
-    
+   
     \textbf{Software:} SolidWorks, Altium Designer, Unity
     \textbf{Documentation:} LaTeX, Microsoft Office Suite, Canva \linebreak
     \textbf{Other:} Adobe Premiere Pro, Photoshop, Lightroom
@@ -329,7 +324,7 @@
 \section{Research Interests}
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-        \textbf{}{Human-Computer Interaction, Wearable, Interaction Design} \\
+        \textbf{}{Human-Computer interfaces, Wearable computing, embedded ai} \\
     }}
 \end{itemize}
 
@@ -337,8 +332,15 @@
 \section{Referees}
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
+        \strut
+        \textbf{Dr. Don Samitha Elvitigala,}\linebreak
+        {B.Sc. Eng. (Moratuwa, Sri Lanka), P.hD. (Auckland, New Zealand) \linebreak
+        Senior Lecturer\linebreak
+        Department of Human Centered Computing \linebreak
+        Monash University, Clayton, Australia\linebreak
+        Email: Don.Elvitigala@monash.edu} \\
         \strut	
-        \textbf{Dr. Pranjeevan Kulasingham,}\linebreak
+        \textbf{\linebreak Dr. Pranjeevan Kulasingham,}\linebreak
         {B.Sc. Eng. (Moratuwa, Sri Lanka), Ph.D. (University of Maryland, College Park) \linebreak
         Senior Lecturer \linebreak
         Department of Electronic and Telecommunication Engineering \linebreak
@@ -351,14 +353,7 @@
         Department of Electronic and Telecommunication Engineering \linebreak
         University of Moratuwa, Sri Lanka\linebreak
         Email: sampathk@uom.lk} \\
-        \strut  
-        \textbf{\linebreak Dr. Don Samitha Elvitigala,}\linebreak
-        {B.Sc. Eng. (Moratuwa, Sri Lanka), P.hD. (Auckland, New Zealand) \linebreak
-        Senior Lecturer\linebreak
-        Department of Human Centered Computing \linebreak
-        Monash University, Clayton, Australia\linebreak
-        Email: Don.Elvitigala@monash.edu} \\
-        \strut    
+        \strut
     }}
 \end{itemize}
 
