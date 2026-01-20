@@ -1,0 +1,124 @@
+%-------------------------
+% Cover Letter in Latex
+% Author : Audric Serador
+% Inspired by: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+% --- STANDARD PACKAGES FROM PREVIOUS SETUP ---
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{ragged2e} % Needed for justify environment if not already loaded, checking main.tex didn't show it explicitely but used it. It might be standard or missing. I will add it to be safe or use what main.tex used. main.tex used \begin{justify} so likely ragged2e is needed or defined elsewhere. Wait, main.tex didn't import ragged2e in the snippet. Let me check if I missed it. Ah, I see `\usepackage{ragged2e}` is NOT in line 1-30. If main.tex compiles, maybe it's standard in one of the other packages? Or maybe I should add it. I'll add \usepackage{ragged2e} to be safe.
+\usepackage{graphicx}
+\usepackage{mwe}
+\usepackage{wrapfig}
+\input{glyphtounicode}
+\usepackage[default]{lato} % Custom font
+\usepackage{ragged2e}
+
+% --- STYLING SETUP ---
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+
+% --- MODIFIED ALIGNMENT: REMOVING RAGGEDRIGHT TO ALLOW JUSTIFICATION ---
+% \raggedbottom % Keep this for vertical spacing
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+\pdfgentounicode=1
+
+%-------------------------%
+
+\begin{document}
+
+%----------HEADING (Simplified for Vertical Alignment)----------%
+\noindent
+\textbf{\Huge \scshape Chathura Nirmal Weerasinghe} \\[0.5em]
+\noindent % Ensures the contact line also starts at the far left
+\textbf {\href{https://www.chathuranirmal.com}{{www.chathuranirmal.com}}} \quad \small\ +94-770636509  \quad \small
+\href{mailto:chathuranirmalweerasinghe@gmail.com}{{chathuranirmalweerasinghe@gmail.com}} \quad
+
+% --- ADDING HORIZONTAL LINE AFTER HEADER ---
+\vspace{0.1cm}
+\noindent\rule{\textwidth}{1pt}
+\vspace{0.8cm} % Space after the line
+
+% --- RECEIVER (Already flush-left) ---
+\noindent\textbf{Hiring Committee},\\
+SynapSee Project, \\
+SCIS. \\
+\vspace{0.8cm}
+
+% --- SUBJECT LINE ---
+\begin{center}
+    \textbf{Subject: Application for Research Engineer – Neuromorphic Eye-Tracking}
+\end{center}
+\vspace{0.5cm}
+
+% --- SALUTATION (Ensuring flush-left alignment with \noindent) ---
+\noindent Dear Hiring Committee,
+\vspace{0.2cm}
+
+% --- BODY OF THE LETTER WITH JUSTIFICATION and distinct paragraph breaks ---
+\noindent % Ensuring the first paragraph starts flush-left
+\begin{justify}
+
+I am writing to apply for the Research Engineer position in the Tier-2 SynapSee project. I am a final-year Biomedical Engineering undergraduate at the University of Moratuwa, graduating in mid-2026. I currently maintain a First Class GPA (3.72/4.0) and have been placed on the Dean's List in Semesters 1, 4, 6, and 7. My interest in this role comes directly from my prior research work on eye-gaze sensing, wearable systems, and low-power embedded computation within human-centered research settings.
+
+\vspace{0.3cm} % Explicit vertical space for formal paragraph break
+
+During my research internship at the Exertion Games Lab at Monash University, I worked on a gaze aversion detection system as part of an embodied remembering study. In this project, I processed real-time gaze streams from Tobii eye trackers and implemented logic to detect gaze disengagement events, which were then used to trigger arm-worn haptic and assistive feedback devices. The system was deployed using Raspberry Pi and ESP32 platforms. This work gave me direct exposure to practical challenges in eye-tracking systems.
+
+\vspace{0.3cm} % Explicit vertical space for formal paragraph break
+
+In parallel, I led the development of VibroBits, a wearable vibrotactile feedback system that translated center-of-pressure data into tactile cues for sports training. The project was demonstrated at SportsHCI 2025. I executed full-cycle research workflows from gap analysis to manuscript revision and actively engaged in the lab’s scholarly culture.
+
+\vspace{0.3cm} % Explicit vertical space for formal paragraph break
+
+My technical background aligns with the SynapSee project. I have applied machine learning techniques such as clustering and lightweight classifiers in projects involving physiological signals including EEG, ECG, and ultrasound. My certifications in embedded machine learning and edge computing focused on deploying computationally efficient models on constrained hardware, which directly supports the requirements of low-power, on-device processing for wearable eye-tracking systems.
+
+\vspace{0.3cm} % Explicit vertical space for formal paragraph break
+
+Looking ahead, I am motivated to continue working on research that connects sensing hardware, computation, and human experience. My long-term goal is to pursue a PhD in Human–Computer Interaction. As I am at an early stage of my career journey, I am seeking a place where I can both contribute and learn, and I believe the SynapSee project is the perfect match for this expectation.
+
+\vspace{0.3cm} % Explicit vertical space for formal paragraph break
+
+Thank you for considering my application. My CV is attached, and my portfolio is available at chathuranirmal.com.
+
+\end{justify}
+\vspace{0.5cm}
+
+% --- CLOSING AND SIGNATURE ---
+\begin{flushleft}
+    Sincerely, \\
+    %\vspace{1.0cm} % Space for a physical signature
+    \textbf{Chathura Nirmal Weerasinghe}
+    
+\end{flushleft}
+
+\end{document}
