@@ -1,0 +1,356 @@
+%-------------------------
+% Resume in Latex
+% Author : Audric Serador
+% Inspired by: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{mwe} % for blindtext and example-image-a in example
+\usepackage{wrapfig}
+\usepackage{comment}
+
+\input{glyphtounicode}
+
+% Custom font
+\usepackage[default]{lato}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------%
+% Custom commands
+\begin{document}
+%-------------------------%
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+        {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{10pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\definecolor{Black}{RGB}{0, 0, 0}
+\newcommand{\seticon}[1]{\textcolor{Black}{\csname #1\endcsname}}
+
+%-------------------------------------------%
+%%%%%%  RESUME STARTS HERE  %%%%%
+
+%----------HEADING----------%
+\begin{center}
+    \textbf{\Huge \scshape Chathura Nirmal Weerasinghe} \\[0.5em]
+    \textbf{\href{https://www.chathuranirmal.com}{\underline{chathuranirmal.com}}} \quad \small\ +94-770636509 \\
+    \href{mailto:chathuranirmalweerasinghe@gmail.com}{\underline{chathuranirmalweerasinghe@gmail.com}} \quad
+    \href{https://www.linkedin.com/in/chathuranirmalweerasinghe}{\underline{linkedin.com/chathuranirmal}} \quad
+    \href{https://github.com/chathuracns}{\underline{github.com/chathuracns}}
+\end{center}
+
+%-----------EDUCATION-----------%
+\section{Education}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+        {University of Moratuwa, Sri Lanka}{Expected June 2026}
+        {Bachelor of Science in Biomedical Engineering (CGPA: 3.73 / 4.0) \linebreak \small{\textit{Dean's List in Semester 1, 4, 6, 7}}}{}
+   
+    \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Biomedical Device Design, Biosignal Processing, Neural Networks, Pattern Recognition, Linear Algebra, Calculus, Computer Architecture, Data Structures and Algorithms, Software Development and Competition, Modelling and Analysis of Physiological Systems, Anatomy and Physiology for Engineers, Psychology}
+    \resumeItemListEnd
+     
+    \resumeSubheading
+        {Kingswood College, Kandy, Sri Lanka}{Oct 2020}
+        {GCE Advanced Level (4As / 99th in country out of 34,389 students / z-score of 2.59)}{}
+    
+    \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Combined Mathematics, Physics, Chemistry, General English}
+    \resumeItemListEnd
+    
+\resumeSubHeadingListEnd
+
+%-----------Research Interests -----------%
+\section{Research Interests}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{}{Human Centered AI, Human Augmentation, Wearables, Assistive Technologies, Interaction Design} \\
+    }}
+\end{itemize}
+
+%-----------EXPERIENCE-----------%
+\section{Experience}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Research Experience @ Exertion Games Lab \href{https://exertiongameslab.org/people}{\faExternalLink*}}{Jan 2025 -- July 2025}
+        {Department of Human Centered Computing, Monash University, Clayton Campus, Australia.}{}
+    
+    \resumeItemListStart
+        \resumeItem{Developed a computer vision-based gaze aversion detection system utilizing YOLOv5 for object detection, integrated with Tobii Eye-Trackers, Raspberry Pi, and ESP32 modules to control arm-worn haptic and exoskeleton feedback for "Embodied Remembering" research (Manuscript in preparation).}
+        \resumeItem{Designed "VibroBits," a wearable system for visualizing center-of-pressure via vibrotactile feedback for sports training, \href{https://doi.org/10.1145/3749385.3749418}{\underline{Demonstrated at SportsHCI '25.}}}
+        \resumeItem{Designed AR navigation and safety alerts using HoloLens 2 and X-Real glasses to analyse cyclist attention.}
+        \resumeItem{Contributed to a systematic review on AR cycling attention by assisting with full-text review, data extraction, and manuscript composition.}
+        \resumeItem{Executed full-cycle research workflows, including gap analysis, literature review, study framework development, and collaborative manuscript revision.}
+        \resumeItem{Contributed to the lab and its culture by participating in scholarly discussions, research exchanges, and peer feedback sessions.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+        {Product Development Experience @ "MeasureUP" \href{https://chathuranirmal.com/MeasureUP/}{\faExternalLink*}}{Aug 2023 -- Present}
+        {World Bank funded AHEAD Project to Develop a Portable BMI Measuring Device for Clinical Settings.}{}
+    
+    \resumeItemListStart
+        \resumeItem{Led a multidisciplinary team on the World Bank-funded Product development project worth 0.5 million LKR.}
+        \resumeItem{Achieved the budget constraint of 5,000 LKR per unit by using cost-effective sensors and improving its ability for height detection with 3 cm precision by implementing K-means clustering-based machine learning framework.}
+        \resumeItem{Involved in the complete product design process, ensuring the 3D design met FDA requirements.}
+        \resumeItem{Maintained legal, financial, and design documentation. Exhibited excellent communication skills in pitching sessions, securing grant approval.}
+    \resumeItemListEnd
+    
+
+
+\resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------%
+\section{Publications}
+\resumeItemListStart
+    \resumeItem{\textbf{Chathura Nirmal Weerasinghe,} Ruchira Abeywardhane, Uvindu Kodikara, Sasindu Abewickrema, Nihar Sabnis, Florian 'Floyd' Mueller, Don Samitha Elvitigala. VibroBits: Visualising Body Centre of Pressure Using Vibrotactile Feedback for Sports Training. SportsHCI 2025. Demonstration, ACM} \href{https://doi.org/10.1145/3749385.3749418}{\underline{https://doi.org/10.1145/3749385.3749418}}
+    \resumeItem{Vincent van Rheden, Sasindu Abewickrema, Uvindu Kodikara, Ruchira Abeywardhane, \textbf{Chathura Weerasinghe}, Florian 'Floyd' Mueller, Don Samitha Elvitigala. GestureSock++: Toe Gestures as Alternative Input Method while Cycling. SportsHCI 2025. Demonstration, ACM} \href{https://doi.org/10.1145/3749385.3749413}{\underline{https://doi.org/10.1145/3749385.3749413}}
+\resumeItemListEnd
+
+%-----------PROJECTS-----------%
+\section{Projects}
+\resumeSubHeadingListStart
+    
+    \resumeProjectHeading
+        {\textbf{Deep Learning-based Brain–Computer Interface Game for Locked-In Paediatrics (Ongoing) \href{https://github.com/fyp21-bci/.github}{\faExternalLink*}} $|$ \emph{Python, OpenBCI, Unity}}{}
+    \resumeItemListStart
+        \resumeItem{Developing a non-invasive EEG-based BCI system to allow a 6-year-old locked-in patient to control a simple game using brain signals.}
+        \resumeItem{Implementing deep learning-based classification methods optimized for real-time EEG signal classification on embedded hardware, targeting high reliability and low-latency inference.}
+        \resumeItem{Designing an improved custom dry-electrode headset in SolidWorks, addressing fit and contact, prototyping and mechanical testing are in progress.}
+        \resumeItem{Developing a Unity-based game interface with patient-specific thresholds to support gradual training and engagement.}
+        \resumeItem{Secured a grant worth of 1 Million LKR to purchase OpenBCI Products by demonstrating the project to sponsors.}
+        \quad
+    \resumeItemListEnd
+    
+    \resumeProjectHeading
+        {\textbf{Human Height Measuring Under Low Ultrasound Reflection due to Dense Scalp Hair \href{https://github.com/chathuracns/Human-Height-Measuring-Under-Low-Ultrasound-Reflection-due-to-Dense-Scalp-Hair}{\faExternalLink*}} $|$ \emph{tinyML, SolidWorks, Altium}}{}
+    \resumeItemListStart
+        \resumeItem{Preprocessed a dataset of ultrasound reflections, accounting for acoustic transmission losses and field alterations caused by scalp hair.}
+        \resumeItem{Implemented a K-means clustering algorithm to classify data clusters corresponding to reflections from hair.}
+        \resumeItem{Enhanced detection accuracy to 3 cm level, even under conditions of extremely low ultrasound reflection.}
+        \resumeItem{Selected for a grant from the World Bank funded AHEAD (Accelerating Higher education Expansion and Development) program.}
+        \quad
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{Dynamic Body-Weight Support System Using a Motorized Unloader for Rehabilitation \href{https://github.com/chathuracns/Zero-G-Dynamic-Body-Weight-Support-System-Using-a-Motorized-Unloader}{\faExternalLink*}} $|$ \emph{Matlab, AVR}}{}
+    \resumeItemListStart
+        \resumeItem{Analyzed load cell and position encoder signals to detect the rate of tension generated on the supporting rope.}
+        \resumeItem{Implemented and simulated a digital PID controller in MATLAB to validate the control strategy.}
+        \resumeItem{Deployed a digital PID Controller using WinAVR on an ATmega328P Micro-controller.}
+        \quad
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{ECG Signal Extracting and Monitoring Using Analog Electronics and Wet Electrodes \href{https://github.com/chathuracns/ECG-Signal-Extracting-and-Monitoring-Using-Analog-Electronics-and-wet-electrodes}{\faExternalLink*}} $|$ \emph{LT-Spice, Multisim, Altium}}{}
+    \resumeItemListStart
+        \resumeItem{Analog Circuit Design: Right Leg Drive, Amplifiers, Filters (high pass, low pass, notch, Butter-worth, Bessel Thomson).}
+        \resumeItem{Op-Amp selection (TL072CP) evaluated the parameters like slew rate, offset voltage, noise characteristics.}
+        \resumeItem{Use of Fast Fourier Transform techniques to evaluate effectiveness of the filters.}
+    \resumeItemListEnd
+    
+    \resumeProjectHeading
+        {\textbf{Redesign Human Height Measuring as a Device Focusing on US FDA Regulation \href{https://github.com/chathuracns/Re-design-Human-Height-Measuring-as-a-Device-Focusing-on-US-FDA-Regulation}{\faExternalLink*}} $|$ \emph{FDA databases}}{}
+    \resumeItemListStart
+        \resumeItem{Classified the device into risk class (I, II, III).}
+        \resumeItem{Re-Design the product enclosure for 510(k) Pre-market Notification.}
+        \resumeItem{Familiarity with FDA databases.}
+        \quad
+    \resumeItemListEnd
+
+\begin{comment}
+    \resumeProjectHeading
+        {\textbf{EcoWatt Field Gateway for Inverter Monitoring \href{https://docs.google.com/document/d/18SiAOJTwsafdJqaXoMqMdF3TOuyXTFAseOsylDLD3i8/edit}{\faExternalLink*}} $|$ \emph{ESP8266/NodeMCU,Modbus Protocol, FOTA}}{} 
+    \resumeItemListStart
+        \resumeItem{Design and implement a field gateway (EcoWatt Device) to poll a simulated solar inverter (Inverter SIM) via a cloud API.}
+        \resumeItem{Integrate FOTA (Firmware Over-The-Air) functionality, supporting secure, chunked downloads, SHA-256 integrity verification, and rollback safety for firmware updates.}
+        \resumeItem{Implement a lightweight security layer (HMAC-SHA256 for integrity and anti-replay protection) and power optimization techniques (DVFS/sleep) suitable for MCU constraints.}
+    \resumeItemListEnd 
+\end{comment}
+
+\begin{comment}
+    \resumeProjectHeading
+        {\textbf{Implementing a Complete Embedded System for a Medibox} $|$ \emph{Node-RED, MQTT protocol, NTP, ESP32}}{}
+    \resumeItemListStart
+        \resumeItem{ESP32 micro-controller programming, Designing Node-RED dashboard for remote monitoring}
+        \resumeItem{MQTT protocol for IoT communication}
+    \resumeItemListEnd
+\end{comment}
+
+    \resumeProjectHeading
+        {\textbf{Smart Fitness Band with Custom Tension Sensing and Gamified Endurance Tracking} $|$ \emph{ESP32, React, Real-Time communication}}{}
+    \resumeItemListStart
+        \resumeItem{Developed a custom analog front-end circuit to measure fitness band tension accurately using microcontroller ADC input}
+        \resumeItem{Implemented an ESP32-based system to track tension magnitude and time-under-tension in real time}
+        \resumeItem{Built a gamified software experience where tension + endurance time act as gameplay variables for interactive training feedback}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------Certification-----------%
+\section{Certifications \href{https://www.linkedin.com/in/chathura-weerasinghe-9a08bb213/details/certifications/}{\faExternalLink*}}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+        {DeepLearning.AI}{Completed June 2024}
+        {Deep Learning Specialization}{}
+    \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Neural Networks, Hyperparameter tuning, Regularization and Optimization, Structuring Machine Learning Projects, Convolution Neural Networks, Recurrent Neural Networks}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+        {SkillSurf.lk ENTC}{Completed Aug 2024}
+        {Short Course on Embedded Machine Learning for Edge Computing}{}    
+    \strut
+    \resumeSubheading
+        {American Corner- U.S. Embassy in Sri Lanka}{Completed May 2023}
+        {Short Course on Public Speaking for Young Adults}{}
+
+\resumeSubHeadingListEnd
+\newpage
+
+%-----------SKILLS-----------%
+\section{Technical Skills}
+\begin{multicols}{2}
+    \textbf{Languages:} English (fluent), Sinhala (native) \linebreak
+    \textbf{Programming:} Python, C, C++, Matlab, HTML 
+    
+    \textbf{Frameworks:} Tensorflow, Keras, PyTorch
+   
+    \textbf{Software:} SolidWorks, Altium Designer, Unity
+    \textbf{Documentation:} LaTeX, Microsoft Office Suite, Canva \linebreak
+    \textbf{Other:} Adobe Premiere Pro, Photoshop, Lightroom
+\end{multicols}
+
+%-----------ACHIEVEMENTS-----------%
+\section{Achievements \href{https://www.linkedin.com/in/chathura-weerasinghe-9a08bb213/details/honors/}{\faExternalLink*}}
+\begin{itemize}
+    \resumeItemListStart
+        \resumeItem{\textbf{Won the 9th place} representing Sri Lanka at 12th Statistics Olympiad 2020.}
+        \resumeItem{\textbf{Bronze Medalist} at the Sri Lankan Mathematics Olympiad Competition 2019.}
+        \resumeItem{\textbf{Bronze Medalist} at the Sri Lankan Physics Olympiad Competition 2019.}
+        \resumeItem{\textbf{Winner} at the Sri Lankan Statistics Olympiad Competition 2018 and 2019.}
+    \resumeItemListEnd
+\end{itemize}
+
+%-----------POR-----------%
+\section{Social Engagements \href{https://www.linkedin.com/in/chathura-weerasinghe-9a08bb213/details/experience/}{\faExternalLink*}}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{Head of Operations}{: At Electronic Club, Electronic and Telecom. Engineering Department} \\
+        \textbf{Assistant Secretory}{: At IEEE EMBS Student Branch Chapter at the University of Moratuwa} \\
+        \textbf{Video-Designer}{: At Electronic Club, Electronic and Telecom. Engineering Department} \\
+        \textbf{Batch Representative}{: At Electronic and Telecom. Engineering Department - University of Moratuwa} \\
+        \textbf{Actor/Script Writer}{: Abhina'23 and "Mevisuru Ranga Sobha' 22" (Drama-fests)} \\
+    }}
+\end{itemize}
+
+
+%-----------REFEREES -----------%
+\section{Referees}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \strut
+        \textbf{Dr. Don Samitha Elvitigala,}\linebreak
+        {B.Sc. Eng. (Moratuwa, Sri Lanka), P.hD. (Auckland, New Zealand) \linebreak
+        Senior Lecturer\linebreak
+        Department of Human Centered Computing \linebreak
+        Monash University, Clayton, Australia\linebreak
+        Email: Don.Elvitigala@monash.edu} \\
+        \strut	
+        \textbf{\linebreak Dr. Pranjeevan Kulasingham,}\linebreak
+        {B.Sc. Eng. (Moratuwa, Sri Lanka), Ph.D. (University of Maryland, College Park) \linebreak
+        Senior Lecturer \linebreak
+        Department of Electronic and Telecommunication Engineering \linebreak
+        University of Moratuwa, Sri Lanka\linebreak
+        Email: pranjeevank@uom.lk} \\
+        \strut 
+        \textbf{\linebreak Dr. Sampath K. Perera,}\linebreak
+        {B.Sc. Eng. (Moratuwa, Sri Lanka), P.hD. (RUB, Germany), MIEEE, \linebreak
+        Senior Lecturer\linebreak
+        Department of Electronic and Telecommunication Engineering \linebreak
+        University of Moratuwa, Sri Lanka\linebreak
+        Email: sampathk@uom.lk} \\
+        \strut
+    }}
+\end{itemize}
+
+%-------------------------------------------%
+\end{document}

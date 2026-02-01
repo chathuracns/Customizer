@@ -1,0 +1,186 @@
+%-------------------------
+% Resume in Latex
+% Author : Lihini Himara Kumarasinghe
+% Inspired by: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{mwe} % for blindtext and example-image-a in example
+\usepackage{wrapfig}
+\usepackage{comment}
+
+\input{glyphtounicode}
+
+% Custom font
+\usepackage[default]{lato}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------%
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+        {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{10pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\definecolor{Black}{RGB}{0, 0, 0}
+\newcommand{\seticon}[1]{\textcolor{Black}{\csname #1\endcsname}}
+
+%-------------------------------------------%
+%%%%%%  RESUME STARTS HERE  %%%%%
+
+\begin{document}
+
+%----------HEADING----------%
+\begin{tabularx}{\textwidth}{@{} X r @{}}
+    \begin{minipage}[t]{\textwidth}
+        \textbf{\Huge \scshape Lihini Himara Kumarasinghe} \\[0.5em]
+        \small Zhengzhou, China $|$ +8615136122103 $|$ \href{mailto:lihinihimara@gmail.com}{\underline{lihinihimara@gmail.com}}
+    \end{minipage} &
+    \begin{minipage}[t]{2cm}
+        \raisebox{-0.5\height}{\includegraphics[width=2.4cm]{lihini}}
+    \end{minipage}
+\end{tabularx}
+
+%-----------PROFESSIONAL SUMMARY-----------%
+\section{Professional Summary}
+Final-year Clinical Medicine (MBBS) student with strong academic performance (Rank: 4/68, GPA: 3.61) and ongoing clinical internship experience at the First Affiliated Hospital of Zhengzhou. Seeking admission to a Master’s program to develop specialized expertise in Anesthesiology, with particular interest in cardiac and neurosurgical applications. Demonstrates strong foundation in physiology and pharmacology, combined with hands-on clinical exposure in high-acuity settings. Motivated to contribute to perioperative medicine through advanced training, research, and multidisciplinary teamwork.
+
+%-----------EDUCATION-----------%
+\section{Education}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Zhengzhou University – School of International Education}{Expected Graduation: July 2026}
+        {Bachelor of Medicine, Bachelor of Surgery (MBBS) – English Medium Program}{Zhengzhou, China}
+    \resumeItemListStart
+        \resumeItem{GPA: 3.61/4.0 $|$ Academic Rank: 4/68}
+        \resumeItem{Clinical Training: Final-year internship at First Affiliated Hospital of Zhengzhou (2025–2026)}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------%
+\section{Clinical Internship Experience}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Medical Intern}{Nov 2025 – Present (Expected: June 2026)}
+        {First Affiliated Hospital of Zhengzhou}{Zhengzhou, China}
+    \resumeItemListStart
+        \resumeItem{\textbf{Clinical Rotations with Specialty Relevance:}}
+        \vspace{-1pt}
+        \begin{itemize}
+            \item \small{General Surgery \& Subspecialty Exposure: Observed perioperative workflows, preoperative assessment, and post-operative care. Gained insight into anesthetic requirements across surgical disciplines.}
+            \item \small{Internal Medicine (Cardiology \& Pulmonology Focus): Managed patients with hypertension, heart failure, COPD, and other conditions critical to perioperative risk stratification. Developed understanding of cardiovascular pharmacology and hemodynamic monitoring.}
+            \item \small{Neurology: Assessed patients with neurological disorders, understanding implications for anesthetic management and neurocritical care.}
+            \item \small{Emergency Medicine: Exposure to acute resuscitation, airway management, and hemodynamic stabilization—foundational skills for anesthesiology.}
+        \end{itemize}
+        \resumeItem{\textbf{Key Involvement:}}
+        \vspace{-1pt}
+        \begin{itemize}
+             \item \small{Participated in ward rounds and clinical discussions emphasizing physiological optimization for surgical patients.}
+             \item \small{Documented patient histories with focus on comorbidities relevant to anesthetic planning (cardiac, respiratory, neurological).}
+             \item \small{Assisted in basic procedures requiring attention to sterile technique and patient monitoring.}
+        \end{itemize}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------AWARDS-----------%
+\section{Academic Honors \& Awards}
+\resumeItemListStart
+    \resumeItem{Academic Excellence Scholarship – Awarded in 4th Year \& 5th Year (Top 6\% of cohort)}
+    \resumeItem{Outstanding Student Award – 4th Year}
+\resumeItemListEnd
+
+%-----------SKILLS-----------%
+\section{Skills \& Competencies}
+\resumeSubHeadingListStart
+    \item
+    \textbf{Clinical \& Technical}{: Patient Assessment \& Pre-operative Evaluation, Understanding of Anesthetic Pharmacology (Volatiles, IV agents, analgesics, muscle relaxants), Basic Airway Management \& Cardiopulmonary Resuscitation (BLS), Interpretation of Vital Signs, ECG, Basic Blood Gas/Lab Values, Sterile Technique \& Procedural Assistance} \\
+    \vspace{3pt}
+    \textbf{Analytical \& Professional}{: Strong Foundation in Human Physiology \& Pharmacology, Aptitude for High-Stakes, Detail-Oriented Clinical Environments, Adaptability in Fast-Paced Clinical Settings, Effective Communication in Multidisciplinary Teams}
+\resumeSubHeadingListEnd
+
+%-----------LANGUAGES-----------%
+\section{Language Proficiency}
+\resumeItemListStart
+    \resumeItem{English: Fluent (Medium of Instruction)}
+    \resumeItem{Sinhala: Native}
+\resumeItemListEnd
+
+\end{document}
